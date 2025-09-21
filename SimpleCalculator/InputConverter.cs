@@ -7,6 +7,7 @@ namespace SimpleCalculator
         public static int ConvertInputToNumeric(string argTextInput)
         {
             //testing push
+            //testing push again
             int converted = Convert.ToInt32(argTextInput);
             return converted;
         }

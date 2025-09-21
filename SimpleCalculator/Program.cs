@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 
 namespace SimpleCalculator
@@ -31,8 +32,17 @@ namespace SimpleCalculator
                 }
 
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
+                
+                StringBuilder finalMessage =  new StringBuilder("The value ");
+                finalMessage.Append(firstNumber.ToString());
+                finalMessage.Append(" ");
+                finalMessage.Append(operation.ToString());
+                finalMessage.Append(" the value ");
+                finalMessage.Append(secondNumber.ToString());
+                finalMessage.Append(" is equal to ");
+                finalMessage.Append(result.ToString("F2")); 
 
-                Console.WriteLine(result);
+                Console.WriteLine(finalMessage.ToString());
 
             } catch (FormatException ex)
             {

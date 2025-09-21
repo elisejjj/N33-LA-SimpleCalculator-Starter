@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.Remoting.Channels;
 using System.Text;
 using CalculatorEngineName;
 
@@ -22,42 +23,42 @@ namespace SimpleCalculator
                     // Class to perform actual calculations
                     CalculatorEngine calculatorEngine = new CalculatorEngine();
 
-                    Console.WriteLine("Write the first number:");
+                    Console.WriteLine(Constants.FirstNumberPrompt);
 
                     double firstNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
 
-                    Console.WriteLine("Write the second number:");
+                    Console.WriteLine(Constants.SeconNumberPrompt);
                     double secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
 
-                    Console.WriteLine("Write the operation (+, -, /, *):");
+                    Console.WriteLine(Constants.OperatorPrompt);
                     string operation = Console.ReadLine();
 
                     if (operation != "+" && operation != "-" && operation != "*" && operation != "/")
                     {
-                        Console.WriteLine("Invalid operator. Type in +, -, /, or * without any spaces or extra characters.");
+                        Console.WriteLine(Constants.InvalidOperator);
                         operation = Console.ReadLine();
                     }
 
                     double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);
 
-                    StringBuilder finalMessage = new StringBuilder("The value ");
+                    StringBuilder finalMessage = new StringBuilder(Constants.TheValue);
                     finalMessage.Append(firstNumber.ToString());
-                    finalMessage.Append(" ");
+                    finalMessage.Append(Constants.Space);
                     finalMessage.Append(operation.ToString());
-                    finalMessage.Append(" the value ");
+                    finalMessage.Append(Constants.TheValue);
                     finalMessage.Append(secondNumber.ToString());
-                    finalMessage.Append(" is equal to ");
+                    finalMessage.Append(Constants.IsEqualTo);
                     finalMessage.Append(result.ToString("F2"));
 
                     Console.WriteLine(finalMessage.ToString());
 
-                    Console.WriteLine("Enter 1 to do another calculation, or 2 to close the calculator");
+                    Console.WriteLine(Constants.PromptRepeater);
                     calculatorOn = InputConverter.ConvertInputToNumeric(Console.ReadLine());
                 }
                 catch (FormatException ex)
                 {
                     // Normally, we'd log this error to a file.
-                    Console.WriteLine("Invalid input. Please input a single number without any spaces or extra characters.");
+                    Console.WriteLine(Constants.InvalidNumber);
                 }
                  
             }

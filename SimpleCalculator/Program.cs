@@ -28,10 +28,10 @@ namespace SimpleCalculator
 
                     Console.WriteLine(Constants.FirstNumberPrompt);
 
-                    double firstNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
+                    double firstNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
 
                     Console.WriteLine(Constants.SeconNumberPrompt);
-                    double secondNumber = InputConverter.ConvertInputToNumeric(Console.ReadLine());
+                    double secondNumber = inputConverter.ConvertInputToNumeric(Console.ReadLine());
 
                     Console.WriteLine(Constants.OperatorPrompt);
                     string operation = Console.ReadLine();
@@ -56,7 +56,7 @@ namespace SimpleCalculator
                     Console.WriteLine(finalMessage.ToString());
 
                     Console.WriteLine(Constants.PromptRepeater);
-                    calculatorOn = InputConverter.ConvertInputToNumeric(Console.ReadLine());
+                    calculatorOn = inputConverter.ConvertInputToNumeric(Console.ReadLine());
                 }
                 catch (FormatException ex)
                 {

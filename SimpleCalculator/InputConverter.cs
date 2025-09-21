@@ -2,11 +2,12 @@
 
 namespace SimpleCalculator
 {
-    public class InputConverter
+    public class InputConverter 
     {
-        public double ConvertInputToNumeric(string argTextInput)
+        public static int ConvertInputToNumeric(string argTextInput)
         {
-            return 0;
+            int converted = Convert.ToInt32(argTextInput);
+            return converted;
         }
     }
 }

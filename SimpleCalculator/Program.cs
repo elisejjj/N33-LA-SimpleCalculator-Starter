@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace SimpleCalculator
 {
     class Program
@@ -8,6 +9,8 @@ namespace SimpleCalculator
         {
             try
             {
+                // Class to convert user input
+                InputConverter inputConverter = new InputConverter();
 
                 // Class to perform actual calculations
                 CalculatorEngine calculatorEngine = new CalculatorEngine();

@@ -29,6 +29,7 @@ namespace SimpleCalculator
                 if (operation != "+" && operation != "-" && operation != "*" && operation != "/")
                 {
                     Console.WriteLine("Invalid operator. Type in +, -, /, or * without any spaces or extra characters.");
+                    operation = Console.ReadLine();
                 }
 
                 double result = calculatorEngine.Calculate(operation, firstNumber, secondNumber);

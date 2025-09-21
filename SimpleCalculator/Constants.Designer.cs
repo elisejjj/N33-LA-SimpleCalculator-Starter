@@ -106,7 +106,7 @@ namespace SimpleCalculator {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enter 1 to do another calculation, or 2 to close the calculator.
+        ///   Looks up a localized string similar to Enter any number other than 2 to do another calculation, or 2 to close the calculator.
         /// </summary>
         internal static string PromptRepeater {
             get {

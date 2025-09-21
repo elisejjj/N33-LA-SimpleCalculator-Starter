@@ -17,7 +17,7 @@ namespace SimpleCalculator.Test.Unit
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
+        [ExpectedException(typeof(FormatException))]
         public void FailsToConvertsInvalidStringInputIntoDouble()
         {
             string inputNumber = "*";

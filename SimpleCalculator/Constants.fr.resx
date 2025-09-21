@@ -118,30 +118,30 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="FirstNumberPrompt" xml:space="preserve">
-    <value>Write the first number:</value>
+    <value>Écrivez le premier numéro</value>
   </data>
   <data name="InvalidNumber" xml:space="preserve">
-    <value>Invalid input. Please input a single number without any spaces or extra characters.</value>
+    <value>Numéro non valide. S'il vous plait écrivez un seule numéro avec aucune espaces ni charactères en extra. </value>
   </data>
   <data name="InvalidOperator" xml:space="preserve">
-    <value>Invalid operator. Type in +, -, /, or * without any spaces or extra characters.</value>
+    <value>Opérateur invalide.  S'il vous plait écrivez un seul opérateur avec aucune espaces ni charactères en extra. </value>
   </data>
   <data name="IsEqualTo" xml:space="preserve">
-    <value> is equal to </value>
+    <value> est égale a </value>
   </data>
   <data name="OperatorPrompt" xml:space="preserve">
-    <value>Write the operation (+, -, /, *):</value>
+    <value>Évrivez l'opérateure (+,-,/,*)</value>
   </data>
   <data name="PromptRepeater" xml:space="preserve">
-    <value>Enter any number other than 2 to do another calculation, or 2 to close the calculator</value>
+    <value>Entrez n'importe quelle nombre sauf 2 pour faire un autre calcul. Entrez 2 pour quitter la calculatrice.</value>
   </data>
   <data name="SeconNumberPrompt" xml:space="preserve">
-    <value>Write the second number:</value>
+    <value>Évrivez le deuxième numéro</value>
   </data>
   <data name="Space" xml:space="preserve">
     <value> </value>
   </data>
   <data name="TheValue" xml:space="preserve">
-    <value> the value </value>
+    <value> la valeure </value>
   </data>
 </root>

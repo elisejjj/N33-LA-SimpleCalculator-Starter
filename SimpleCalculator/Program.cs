@@ -1,14 +1,17 @@
-﻿using System;
+﻿using CalculatorEngineName;
+using System;
+using System.Globalization;
 using System.Runtime.Remoting.Channels;
 using System.Text;
-using CalculatorEngineName;
+using System.Threading;
 
 namespace SimpleCalculator
 {
-    class Program
+    class Programa
     {
         static void Main(string[] args)
         {
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("fr-FR");
             double calculatorOn = 1;
             while (calculatorOn != 2)
             {

@@ -1,0 +1,6 @@
+C:\Users\berry\source\repos\CalculatorEngine1\CalculatorEngine1\bin\Debug\CalculatorEngine1.dll
+C:\Users\berry\source\repos\CalculatorEngine1\CalculatorEngine1\bin\Debug\CalculatorEngine1.pdb
+C:\Users\berry\source\repos\CalculatorEngine1\CalculatorEngine1\obj\Debug\CalculatorEngine1.csproj.AssemblyReference.cache
+C:\Users\berry\source\repos\CalculatorEngine1\CalculatorEngine1\obj\Debug\CalculatorEngine1.csproj.CoreCompileInputs.cache
+C:\Users\berry\source\repos\CalculatorEngine1\CalculatorEngine1\obj\Debug\CalculatorEngine1.dll
+C:\Users\berry\source\repos\CalculatorEngine1\CalculatorEngine1\obj\Debug\CalculatorEngine1.pdb
